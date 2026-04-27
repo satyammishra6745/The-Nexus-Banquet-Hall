@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Hero from "../Components/Hero"; // 👈 Hero import
-import nexus from "../assets/images/DSC01380.jpg"
+import nexus from "../assets/images/DSC01380.JPG"
 const Gallery = () => {
   const [selectedAlbum, setSelectedAlbum] = useState(null);
 
