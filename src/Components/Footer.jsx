@@ -1,0 +1,93 @@
+import React from "react";
+import "./Footer.css";
+import {
+  FaPhoneAlt,
+  FaWhatsapp,
+  FaFacebookF,
+  FaInstagram,
+  FaMapMarkerAlt,
+  FaEnvelope,
+} from "react-icons/fa";
+
+const Footer = () => {
+  return (
+    <footer className="footer">
+
+      {/* 🔴 TOP CTA BAR */}
+      <div className="footer-cta">
+        <div className="cta-left">
+          <FaPhoneAlt className="cta-icon" />
+          <div>
+            <h3>Ready to Make Your Event Special?</h3>
+            <p>Let’s create unforgettable memories with amazing food.</p>
+          </div>
+        </div>
+
+        <div className="cta-buttons">
+          <a href="tel:+919819042009" className="cta-call">Call Now</a>
+          <a href="https://wa.me/919819042009" className="cta-whatsapp">WhatsApp Us</a>
+        </div>
+      </div>
+
+      {/* 🔥 MAIN FOOTER */}
+      <div className="footer-container">
+
+        {/* Brand */}
+        <div className="footer-col">
+          <h2 className="logo"> <b>Nexus</b> Banquet Hall</h2>
+          <p>
+            We provide exceptional catering services for all types of events.
+            Your satisfaction is our priority.
+          </p>
+
+          <div className="social-icons">
+            <a  href="https://www.facebook.com/your_page_name"><FaFacebookF /></a>
+            <a href="https://www.instagram.com/inficore_software_solution/" ><FaInstagram /></a>
+            <a  href="https://wa.me/919819042009"><FaWhatsapp /></a>
+          </div>
+        </div>
+
+        {/* Links */}
+        <div className="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Services</li>
+            <li>Gallery</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
+        {/* Services */}
+        <div className="footer-col">
+          <h3>Our Services</h3>
+          <ul>
+            <li>Wedding Catering</li>
+            <li>Birthday Parties</li>
+            <li>Corporate Events</li>
+            <li>Outdoor Catering</li>
+          </ul>
+        </div>
+
+        {/* Contact */}
+        <div className="footer-col">
+          <h3>Contact Info</h3>
+          <p><FaPhoneAlt /> +91 98765 43210</p>
+          <p><FaWhatsapp /> +91 98765 43210</p>
+          <p><FaEnvelope /> info@banquethall.com</p>
+          <p><FaMapMarkerAlt /> Pune, Maharashtra</p>
+        </div>
+
+      </div>
+
+      {/* Bottom */}
+      <div className="footer-bottom">
+        <p>© 2026 Banquet Hall. All Rights Reserved.</p>
+      </div>
+
+    </footer>
+  );
+};
+
+export default Footer;

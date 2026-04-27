@@ -1,0 +1,314 @@
+.services-section {
+  padding: 80px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+/* Header */
+.services-header b {
+  color: #c59d5f;
+  font-weight: 500;
+}
+
+.services-header h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ------------------------------ */
+
+
+/* ===== STATS SECTION (BIG CONTAINER) ===== */
+.stats-section {
+  margin-top: 60px;
+  padding: 40px;
+  border-radius: 20px;
+
+  background: linear-gradient(135deg, #7b1e2b, #3a0a12);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🔥 Top golden highlight line */
+.stats-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(to right, #f4c542, #ff6a00);
+}
+
+/* ✨ Soft glow background */
+.stats-section::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.05), transparent 70%);
+}
+
+/* ===== EACH BOX ===== */
+.stat-box {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  transition: 0.3s ease;
+}
+
+/* 🔥 Hover effect */
+.stat-box:hover {
+  transform: translateY(-8px) scale(1.05);
+}
+
+/* ===== ICON ===== */
+.stat-icon {
+  font-size: 40px;
+  color: #f4c542;
+  margin-bottom: 10px;
+}
+
+/* ===== NUMBER ===== */
+.stat-box h2 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+/* ===== TEXT ===== */
+.stat-box p {
+  color: #e0e0e0;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* ===== GOLDEN DIVIDER LINE ===== */
+.stat-box:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 20%;
+  height: 60%;
+  width: 2px;
+  background: linear-gradient(to bottom, #f4c542, #ffcc70);
+  box-shadow: 0 0 8px #f4c542;
+}
+@media (max-width: 768px) {
+  .stats-section {
+    flex-direction: column;  
+    gap: 25px;
+    padding: 30px;
+  }
+
+  .stat-box {
+    width: 100%;
+  }
+
+  .stat-box:not(:last-child)::after {
+    display: none;
+  }
+
+  .stat-box:not(:last-child) {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 20px;
+  }
+}
+.stat-icon {
+  font-size: 35px;
+  color: #f4c542;
+  margin-bottom: 10px;
+}
+
+/* ------------section3 */
+/* ===== SPECIAL SECTION ===== */
+.special-section {
+  margin-top: 80px;
+  text-align: center;
+}
+
+/* Heading */
+.special-header p {
+  color: #f4c542;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.special-header h2 {
+  font-size: 32px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/* Grid */
+.special-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+/* Images */
+.special-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: 0.4s ease;
+}
+
+/* Hover effect 🔥 */
+.special-grid img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.menu-btn {
+  background: #3a0a12;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;  /* 🔥 important */
+  font-weight: 600;
+  display: inline-block;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+/* hover */
+.menu-btn:hover {
+  background: #000;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .special-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .special-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ---------------------last */
+
+/* ===================== */
+/* WHY CHOOSE US SECTION */
+/* ===================== */
+
+/* SECTION */
+.why-choose-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* HEADER */
+.why-header p {
+  color: #c59d5f;
+}
+
+.why-header h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+/* CARD */
+.why-box {
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 15px;
+  display: flex;              /* 🔥 MAIN CHANGE */
+  align-items: center;
+  gap: 15px;
+  transition: 0.3s;
+}
+
+.why-box:hover {
+  transform: translateY(-8px);
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* ICON LEFT */
+.why-icon-box {
+  min-width: 55px;
+  height: 55px;
+  background: #3a0a12;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-icon {
+  color: #fff;
+  font-size: 22px;
+}
+/* 🔥 FIX SVG ICON COLOR */
+.why-icon-box svg {
+  color: #fff !important;
+  fill: #fff !important;
+}
+/* TEXT RIGHT */
+.why-content {
+  text-align: left;
+}
+
+.why-content h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.why-content p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}
