@@ -8,7 +8,7 @@ import Footer from "./Components/Footer";
 import Gallery from "./Pages/Gallery";
 import Services from "./Pages/Services";
 import About from "./Pages/About"
-import Contact from "./pages/Contact"
+import Contact from "./Pages/Contact"
 // const Contact = () => <h1 className="text-center mt-5">Contact Page</h1>;
 
 function App() {
