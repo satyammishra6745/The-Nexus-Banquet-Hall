@@ -85,7 +85,7 @@ features={[
       {/* GALLERY */}
       <div style={{ padding: "40px", textAlign: "center" }}>
         <h2 data-aos="fade-down">Our Banquet Hall</h2>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(200px,1fr))", gap: "15px", marginTop: "20px" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "15px", marginTop: "20px" }}>
           {hallImages.map((img, i) => (
             <img key={i} src={img} alt="" data-aos="zoom-in" style={{ width: "100%", borderRadius: "10px" }} />
           ))}
