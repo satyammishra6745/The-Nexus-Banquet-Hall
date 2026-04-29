@@ -4,12 +4,18 @@ import { FaWhatsapp, FaPhone } from "react-icons/fa";
 import { FaUtensils, FaLeaf, FaUserTie, FaClock } from "react-icons/fa";
 import weddingImg from "../assets/images/weddings.png";
 const Hero = ({
-  topText = "Premium Banquet Hall for",
-  title = "Weddings",
-  highlight = "Celebration",
+  topText = "Nexus Banquet Hall for",
+  title = "Perfect Venu For All",
+  highlight = "The Celebration",
   desc = "From intimate gatherings to grand celebrations, we provide exceptional catering services that will make your event unforgettable.",
   showButtons = true ,
-  bgImage = weddingImg 
+  bgImage = weddingImg ,
+  features = [
+  { icon: <FaUtensils />, text: "Hygienic Food" },
+  { icon: <FaLeaf />, text: "Fresh Ingredients" },
+  { icon: <FaUserTie />, text: "Experienced Chefs" },
+  { icon: <FaClock />, text: "On Time Service" }
+]
 }) => {
   return (
     <section
@@ -52,12 +58,13 @@ const Hero = ({
         )}
 
         {/* Features */}
-        <div className="hero-features">
-          <span><FaUtensils /> <b>Hygienic Food</b></span>
-          <span><FaLeaf /> <b>Fresh Ingredients</b></span>
-          <span><FaUserTie /> <b>Experienced Chefs</b></span>
-          <span><FaClock /> <b>On Time Service</b></span>
-        </div>
+<div className="hero-features">
+  {features.map((item, i) => (
+    <span key={i}>
+      {item.icon} <b>{item.text}</b>
+    </span>
+  ))}
+</div>
 
       </div>
     </section>

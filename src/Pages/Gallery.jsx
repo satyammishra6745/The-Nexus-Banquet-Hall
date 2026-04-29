@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Hero from "../Components/Hero"; // 👈 Hero import
 import nexus from "../assets/images/DSC01380.JPG"
+import { FaImages, FaCamera, FaStar, FaSmile } from "react-icons/fa";
 const Gallery = () => {
   const [selectedAlbum, setSelectedAlbum] = useState(null);
 
@@ -68,6 +69,12 @@ const Gallery = () => {
   desc="Take a glimpse of our beautiful events, decoration and delicious food moments."
   showButtons={false}
   bgImage={nexus}
+features={[
+  { icon: <FaImages />, text: "Event Gallery" },
+  { icon: <FaCamera />, text: "Captured Moments" },
+  { icon: <FaStar />, text: "Beautiful Setups" },
+  { icon: <FaSmile />, text: "Happy Memories" }
+]}
 />
 
       {/* 🔥 GALLERY */}

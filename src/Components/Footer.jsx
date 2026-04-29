@@ -42,7 +42,7 @@ const Footer = () => {
 
           <div className="social-icons">
             <a  href="https://www.facebook.com/your_page_name"><FaFacebookF /></a>
-            <a href="https://www.instagram.com/inficore_software_solution/" ><FaInstagram /></a>
+            <a href="https://www.instagram.com/nexus_banquets/" ><FaInstagram /></a>
             <a  href="https://wa.me/919819042009"><FaWhatsapp /></a>
           </div>
         </div>
@@ -52,7 +52,7 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul>
             <li>Home</li>
-            <li>About Us</li>
+            <li>About Us </li>
             <li>Services</li>
             <li>Gallery</li>
             <li>Contact</li>
@@ -63,20 +63,21 @@ const Footer = () => {
         <div className="footer-col">
           <h3>Our Services</h3>
           <ul>
-            <li>Wedding Catering</li>
-            <li>Birthday Parties</li>
+            <li>Weddings</li>
+            <li>Birthday</li>
             <li>Corporate Events</li>
-            <li>Outdoor Catering</li>
+            <li>Anniversary</li>
+            <li>Haldi</li>
           </ul>
         </div>
 
         {/* Contact */}
         <div className="footer-col">
           <h3>Contact Info</h3>
-          <p><FaPhoneAlt /> +91 98765 43210</p>
-          <p><FaWhatsapp /> +91 98765 43210</p>
+          <p><FaPhoneAlt /> +91 73979 71771</p>
+          <p><FaWhatsapp /> +91 86693 39721</p>
           <p><FaEnvelope /> info@banquethall.com</p>
-          <p><FaMapMarkerAlt /> Pune, Maharashtra</p>
+          <p><FaMapMarkerAlt /> Jadhav compound, Building no.3, near SBI Bank Evershine Ext Rd, Evershine City, Vasai East, Maharashtra palghar pin:401208</p>
         </div>
 
       </div>
@@ -91,3 +92,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

@@ -10,7 +10,7 @@ const Navbar = () => {
 <Link className="navbar-brand logo-text" to="/">
   <div className="logo-container">
     <span>
-      Banquet <span className="gold-text">Hall</span>
+     <span className="gold-text"> Nexus Banquet Hall</span>
     </span>
     <small className="tagline">Turning Moments into Grand Celebrations</small>
   </div>

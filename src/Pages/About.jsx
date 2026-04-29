@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Hero from "../Components/Hero";
 import aboutImg from "../assets/images/banqueet.jpeg";
+import { FaCheckCircle, FaLeaf, FaBuilding, FaGem } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -20,6 +21,12 @@ const About = () => {
         desc="Creating unforgettable luxury experiences with premium catering and elegant ambiance."
         showButtons={false}
         bgImage={aboutImg}
+features={[
+  { icon: <FaCheckCircle />, text: "Hygienic Food" },
+  { icon: <FaLeaf />, text: "Fresh Ingredients" },
+  { icon: <FaBuilding />, text: "Spacious Hall" },
+  { icon: <FaGem />, text: "Premium Decoration" }
+]}
       />
 
       {/* 🔥 WHO WE ARE */}
@@ -52,13 +59,13 @@ const About = () => {
               }}></div>
 
               <p style={{ color: "#ccc", lineHeight: "1.8" }}>
-                We are a premium banquet hall dedicated to crafting unforgettable 
-                celebrations. From elegant weddings to corporate gatherings, 
-                we ensure every moment is filled with perfection and style.
+                We are a premium banquet hall dedicated to crafting unforgettable
+                celebrations. From weddings and birthdays to corporate events, 
+               we ensure every moment is filled with perfection and style.
               </p>
 
               <p style={{ color: "#aaa" }}>
-                Our passion lies in delivering luxury experiences with attention to every detail.
+               Our passion lies in delivering memorable experiences with attention to every detail.
               </p>
             </div>
 
@@ -118,8 +125,8 @@ const About = () => {
               }}>
                 <h3 style={{ color: "#d4af37" }}>Our Vision</h3>
                 <p style={{ color: "#aaa" }}>
-                  To become the most trusted name in luxury banquet 
-                  and catering services, known for excellence and innovation.
+                  To become the most trusted name in banquet
+                   and catering services, known for excellence and innovation.
                 </p>
               </div>
             </div>
@@ -138,7 +145,7 @@ const About = () => {
 
           <div className="row mt-5">
 
-            {["Luxury Decoration", "Delicious Catering", "Spacious Hall", "Perfect Management"].map((item, i) => (
+            {["Decoration", "Delicious Catering", "Spacious Hall", "Perfect Management"].map((item, i) => (
               <div className="col-md-3" key={i} data-aos="zoom-in">
                 <div style={{
                   padding: "30px",
@@ -164,7 +171,7 @@ const About = () => {
         textAlign: "center"
       }}>
         <div className="container" data-aos="fade-up">
-          <h2 style={{ fontSize: "40px" }}>Experience the Luxury</h2>
+          <h2 style={{ fontSize: "40px" }}>Experience Elegance & Excellence</h2>
           <p style={{ color: "#ccc", maxWidth: "700px", margin: "20px auto" }}>
             Step into a world of elegance where every detail is designed 
             to impress. From ambiance to food, we deliver nothing but excellence.
@@ -185,7 +192,7 @@ const About = () => {
             {[
               "Amazing food and decoration!",
               "Best experience ever!",
-              "Highly professional service!"
+              "Well-designed spacious hall"
             ].map((text, i) => (
               <div className="col-md-4" key={i} data-aos="fade-up">
                 <div style={{

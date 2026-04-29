@@ -47,14 +47,15 @@
 /* top text */
 .top-text {
     color: gold;
-    font-weight: 500;
+    font-size: xx-large;
+    line-height:1;
 }
 
 /* main heading */
 .hero-heading {
-    font-size: 70px;
+    font-size: 30px;
     font-weight: 700;
-    line-height: 1.1;
+    line-height:0.8;
 }
 
 .hero-heading span {
@@ -83,6 +84,7 @@
     font-weight: 500;
     margin-right: 10px;
     transition: 0.3s;
+    margin-top: 5px;
 }
 
 /* call */

@@ -1,0 +1,16 @@
+/* 🔥 Goldman font apply globally */
+
+body {
+  margin: 0;
+  font-family: 'Goldman', sans-serif !important;
+}
+
+/* Sab headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Goldman', sans-serif !important;
+}
+
+/* Extra safety (Bootstrap override ke liye) */
+* {
+  font-family: 'Goldman', sans-serif;
+}

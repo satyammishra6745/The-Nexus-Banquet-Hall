@@ -1,6 +1,7 @@
     import React from "react";
     import "./ServiceCard.css";
     import { FaArrowRight } from "react-icons/fa";
+    import { Link } from "react-router-dom";
 
     const ServiceCard = ({ image, icon, title, desc }) => {
     return (
@@ -21,9 +22,9 @@
             <h3>{title}</h3>
             <p>{desc}</p>
 
-            <a href="#" className="explore-btn">
-            Explore Now <FaArrowRight />
-            </a>
+<Link to="/gallery" className="explore-btn">
+  Explore Now <FaArrowRight />
+</Link>
         </div>
 
         </div>
