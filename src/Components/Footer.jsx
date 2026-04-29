@@ -37,7 +37,9 @@ const Footer = () => {
           <h2 className="logo"> <b>Nexus</b> Banquet Hall</h2>
           <p>
             We provide exceptional catering services for all types of events.
-            Your satisfaction is our priority.
+            Your satisfaction is our priority.  <p style={{ color: "red", fontWeight: "500" }}>
+  Follow us on Instagram and Facebook
+</p>
           </p>
 
           <div className="social-icons">
@@ -48,16 +50,40 @@ const Footer = () => {
         </div>
 
         {/* Links */}
-        <div className="footer-col">
-          <h3>Quick Links</h3>
-          <ul>
-            <li>Home</li>
-            <li>About Us </li>
-            <li>Services</li>
-            <li>Gallery</li>
-            <li>Contact</li>
-          </ul>
-        </div>
+<div className="footer-col">
+  <h3>Quick Links</h3>
+  <ul style={{ listStyle: "none", padding: 0 }}>
+    <li>
+      <Link to="/" style={{ color: "white", textDecoration: "none" }}>
+        Home
+      </Link>
+    </li>
+
+    <li>
+      <Link to="/about" style={{ color: "white", textDecoration: "none" }}>
+        About Us
+      </Link>
+    </li>
+
+    <li>
+      <Link to="/services" style={{ color: "white", textDecoration: "none" }}>
+        Services
+      </Link>
+    </li>
+
+    <li>
+      <Link to="/gallery" style={{ color: "white", textDecoration: "none" }}>
+        Gallery
+      </Link>
+    </li>
+
+    <li>
+      <Link to="/contact" style={{ color: "white", textDecoration: "none" }}>
+        Contact
+      </Link>
+    </li>
+  </ul>
+</div>
 
         {/* Services */}
         <div className="footer-col">
@@ -76,7 +102,7 @@ const Footer = () => {
           <h3>Contact Info</h3>
           <p><FaPhoneAlt /> +91 73979 71771</p>
           <p><FaWhatsapp /> +91 86693 39721</p>
-          <p><FaEnvelope /> info@banquethall.com</p>
+          <p><FaEnvelope /> thenexusbanquethall@gmail.com</p>
           <p><FaMapMarkerAlt /> Jadhav compound, Building no.3, near SBI Bank Evershine Ext Rd, Evershine City, Vasai East, Maharashtra palghar pin:401208</p>
         </div>
 
