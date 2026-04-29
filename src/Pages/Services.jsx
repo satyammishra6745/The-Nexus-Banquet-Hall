@@ -70,7 +70,7 @@ features={[
       />
 
       {/* SERVICES */}
-      <div style={{ display: "grid",gridTemplateColumns: "repeat(4, 1fr)", gap: "20px", padding: "40px" }}>
+      <div style={{ display: "grid",gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", padding: "40px" }}>
         {services.map((s, i) => (
           <div key={i} data-aos="fade-up" style={{ borderRadius: "15px", overflow: "hidden", boxShadow: "0 10px 30px rgba(0,0,0,0.1)"  ,height: "380px"}}>
             <img src={s.img} alt="" style={{ width: "100%", height: "200px", objectFit: "cover" }} />
