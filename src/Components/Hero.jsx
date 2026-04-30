@@ -4,9 +4,9 @@ import { FaWhatsapp, FaPhone } from "react-icons/fa";
 import { FaUtensils, FaLeaf, FaUserTie, FaClock } from "react-icons/fa";
 import weddingImg from "../assets/images/weddings.png";
 const Hero = ({
-  topText = "Nexus Banquet Hall for",
-  title = "Perfect Venu All",
-  highlight = "The Celebration",
+  topText = "Nexus Banquet Hall",
+  title = "Perfect Venue for All",
+  highlight = "Your Celebrations",
   desc = "From intimate gatherings to grand celebrations, we provide exceptional catering services that will make your event unforgettable.",
   showButtons = true ,
   bgImage = weddingImg ,
@@ -45,12 +45,12 @@ const Hero = ({
         {/* ✅ Buttons (FIX HERE) */}
         {showButtons && (
           <div className="hero-buttons">
-            <a href="tel:+919819042009" className="btn-call">
+            <a href="tel:+917397971771" className="btn-call">
               <FaPhone size={18} />
               Call Now
             </a>
 
-            <a href="https://wa.me/919819042009" target="_blank" className="btn-whatsapp">
+            <a href="https://wa.me/917397971771" target="_blank" className="btn-whatsapp">
               <FaWhatsapp size={20} />
               WhatsApp Us
             </a>
