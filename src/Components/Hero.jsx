@@ -5,7 +5,7 @@ import { FaUtensils, FaLeaf, FaUserTie, FaClock } from "react-icons/fa";
 import weddingImg from "../assets/images/weddings.png";
 const Hero = ({
   topText = "Nexus Banquet Hall for",
-  title = "Perfect Venu For All",
+  title = "Perfect Venu All",
   highlight = "The Celebration",
   desc = "From intimate gatherings to grand celebrations, we provide exceptional catering services that will make your event unforgettable.",
   showButtons = true ,
