@@ -25,8 +25,8 @@ const Footer = () => {
         </div>
 
         <div className="cta-buttons">
-          <a href="tel:+919819042009" className="cta-call">Call Now</a>
-          <a href="https://wa.me/919819042009" className="cta-whatsapp">WhatsApp Us</a>
+          <a href="tel:+917397971771" className="cta-call">Call Now</a>
+          <a href="https://wa.me/917397971771" className="cta-whatsapp">WhatsApp Us</a>
         </div>
       </div>
 
@@ -46,7 +46,7 @@ const Footer = () => {
           <div className="social-icons">
             <a  href="https://www.facebook.com/your_page_name"><FaFacebookF /></a>
             <a href="https://www.instagram.com/nexus_banquets/" ><FaInstagram /></a>
-            <a  href="https://wa.me/919819042009"><FaWhatsapp /></a>
+            <a  href="https://wa.me/917397971771"><FaWhatsapp /></a>
           </div>
         </div>
 
