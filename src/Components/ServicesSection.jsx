@@ -20,7 +20,7 @@ import chicken from "../assets/images/chicken.jpeg";
 import img1 from "../assets/images/DSC01394.JPG"
 import img2 from "../assets/images/DSC01390.JPG"
 import img3 from "../assets/images/DSC01392.JPG"
-import img4 from "../assets/images/DSC01393.JPG"
+import img4 from "../assets/images/DSC01393.png"
 
 const ServicesSection = () => {
 
