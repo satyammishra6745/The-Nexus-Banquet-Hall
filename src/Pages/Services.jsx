@@ -10,7 +10,7 @@ import img11 from "../assets/images/DSC01380.JPG";
 import img22 from "../assets/images/DSC01390.JPG";
 import img33 from "../assets/images/DSC01391.JPG";
 import img44 from "../assets/images/DSC01392.JPG";
-import img55 from "../assets/images/DSC01393.JPG";
+import img55 from "../assets/images/DSC01393.png";
 import img66 from "../assets/images/DSC01394.JPG";
 import imgg from "../assets/images/parkingjpeg.jpeg";
 import img1 from "../assets/images/img1.jpeg";
@@ -70,7 +70,7 @@ features={[
       />
 
       {/* SERVICES */}
-      <div style={{ display: "grid",gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", padding: "40px" }}>
+      <div style={{ display: "grid",gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "20px", padding: "40px" }}>
         {services.map((s, i) => (
           <div key={i} data-aos="fade-up" style={{ borderRadius: "15px", overflow: "hidden", boxShadow: "0 10px 30px rgba(0,0,0,0.1)"  ,height: "380px"}}>
             <img src={s.img} alt="" style={{ width: "100%", height: "200px", objectFit: "cover" }} />
